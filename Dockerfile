@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN gradle clean build # --no-daemon
+RUN gradle clean build --no-daemon
 
 FROM openjdk:17-jdk-slim AS production
 
