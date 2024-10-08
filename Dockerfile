@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN gradle clean build
+RUN gradle clean build --no-daemon
 
 COPY build/libs/*.jar app.jar
 
